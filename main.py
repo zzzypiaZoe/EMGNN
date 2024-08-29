@@ -242,7 +242,7 @@ def main(runid):
         'dropout': args.dropout
         }
 
-    model = EMGNN(args.dynamic_embedding, args.dynamic_interval, args.nodes_num, args.in_len, args.out_len, args.in_dim, args.out_dim, 1, args.layers,#标记过红点
+    model = EMGNN(args.dynamic_embedding, args.dynamic_interval, args.nodes_num, args.in_len, args.out_len, args.in_dim, args.out_dim, 1, args.layers,
                   conv_ch=args.conv_ch, res_ch=args.res_ch,
                   skip_ch=args.skip_ch, end_ch= args.end_ch, kernel_set=args.kernel_set,
                   dilation_exp=args.dilation_exp, gcn_depth=best_params['gcn_depth'],
